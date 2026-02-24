@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peppa Pig Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Memory Match</h1>
+      <div class="score-panel">
+        <div class="score-item">
+          <span class="label">Moves</span>
+          <span id="moves" class="value">0</span>
+        </div>
+        <div class="score-item">
+          <span class="label">Matches</span>
+          <span id="matches" class="value">0</span>
+        </div>
+        <button id="reset-btn" class="reset-btn">New Game</button>
+      </div>
+    </header>
+
+    <main class="game-board">
+      <div id="tiles" class="tiles"></div>
+    </main>
+
+    <div id="win-message" class="win-message hidden">
+      <h2>You did it!</h2>
+      <p>You found all the matches in <span id="final-moves">0</span> moves!</p>
+      <button id="play-again-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
